@@ -28,7 +28,7 @@ public class ShoppingCart {
             throw new Exception("Product " + product.getName() + " has expired");
         }
 
-        // Check if product already exists in cart
+
         for (CartItem item : items) {
             if (item.getProduct().equals(product)) {
                 int newQuantity = item.getQuantity() + quantity;
