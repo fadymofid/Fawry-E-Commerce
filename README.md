@@ -42,19 +42,6 @@ A simple Java console application showcasing a basic e-commerce flow with cart m
      * *updateInventory()*: subtract purchased quantities.
      * *printReceipt()*: show items, subtotal, shipping, total, remaining balance.
 
-## Running the App
 
-1. Compile all classes.
-2. In `main()`, create products, a customer, and a cart.
-3. Add items to the cart and call:
-
-   ```java
-   ShippingService shipSvc = new DefaultShippingService();
-   ECommerceSystem app = new ECommerceSystem(shipSvc);
-   app.checkout(customer, cart);
-   ```
-4. Observe console output of test cases covering normal and error scenarios.
-
----
 
 This simple structure demonstrates encapsulation, single responsibility, open/closed extension, and dependency inversion in a minimal Java app.
